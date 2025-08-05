@@ -1,0 +1,32 @@
+# bazel stuff
+/bazel-bin
+/bazel-out
+/bazel-testlogs
+/bazel-genfiles
+/bazel-simd_experiments
+
+# bzlmod lock file
+MODULE.bazel.lock
+
+# stash for local bazel config overrides
+.bazelrc.local
+
+# ide/project files
+.idea/
+.vscode/
+
+# common build artifacts
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# logs, temp files
+*.log
+*.tmp
+

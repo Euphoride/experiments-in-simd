@@ -1,0 +1,16 @@
+module(
+    name    = "simd_experiments",
+    version = "0.1.0",
+)
+
+bazel_dep(name = "rules_cc", version = "0.0.9")
+
+local_repository = use_repo_rule(
+    "@bazel_tools//tools/build_defs/repo:local.bzl",
+    "local_repository",
+)
+
+local_repository(
+    name = "rapidcheck",
+    path = "rapidcheck",
+)

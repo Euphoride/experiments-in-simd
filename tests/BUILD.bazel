@@ -1,0 +1,9 @@
+cc_binary(
+    name = "tests",
+    srcs = ["linear_inference_tests.cpp"],
+    deps = [
+        "//src:core",
+        "@rapidcheck//:rapidcheck",
+    ],
+)
+
